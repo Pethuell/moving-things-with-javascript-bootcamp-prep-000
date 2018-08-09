@@ -22,6 +22,7 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight(){
+  console.log('I detected a right press at least');
   var rightNumbers = dodger.style.right.replace('px', '');
   var right = parseInt(rightNumbers, 10);
   var leftNumbers = dodger.style.left.replace('px', '');
