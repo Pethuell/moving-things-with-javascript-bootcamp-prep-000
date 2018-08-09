@@ -18,7 +18,7 @@ function moveDodgerLeft() {
   var left = parseInt(leftNumbers, 10);
   
   if(left > 0) {
-    dodger.style.left = `${left - 1}px`;
+    dodger.style.left = `${left - 10}px`;
   }
 }
 
@@ -27,7 +27,9 @@ function moveDodgerRight(){
   var right = parseInt(rightNumbers, 10);
   var leftNumbers = dodger.style.left.replace('px', '');
   var left = parseInt(leftNumbers, 10);
-
+  var windowWidth = game.width();
+  var dodgerWidth = dodger.width();
+  
   if(left < game.width - dodger.width)
     dodger.style.left = `${left + 10}px`;
 }
